@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apotik xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="apotik.xsd">
+<obat Nama="Paracetamol">
+	<kode>G202</kode>
+	<ukuran>500MG</ukuran>
+	<satuan>Strip</satuan>
+	<jumlah>8</jumlah>
+	<khasiat>Meringankan Demam</khasiat>
+	<harga per="satuan">10000</harga>
+	<perusahaan Nama="PT.PIM PHARMACEUTICALS">
+		<alamat>Pasuruan</alamat>
+		<email>pimphar@gmail.com</email>
+	</perusahaan>
+</obat>
+
+<obat Nama="Progmag">
+	<kode>L328</kode>
+	<ukuran>500MG</ukuran>
+	<satuan>Strip</satuan>
+	<jumlah>12</jumlah>
+	<khasiat>Meringankan Asam Lambung</khasiat>
+	<harga per="satuan">8000</harga>
+	<perusahaan Nama="PT.KALBE FARMA">
+		<alamat>Bekasi</alamat>
+		<email>kalbefarma@gmail.com</email>
+	</perusahaan>
+</obat>
+
+<obat Nama="Mefinal">
+	<kode>D473</kode>
+	<ukuran>500MG</ukuran>
+	<satuan>Strip</satuan>
+	<jumlah>12</jumlah>
+	<khasiat>Meringankan Rasa Sakit</khasiat>
+	<harga per="satuan">25000</harga>
+	<perusahaan Nama="PT.CAPRIFARMINDO">
+		<alamat>Bandung</alamat>
+		<email>farmindo@gmail.com</email>
+	</perusahaan>
+</obat>
+
+<obat Nama="Grafix">
+	<kode>S247</kode>
+	<ukuran>500MG</ukuran>
+	<satuan>Strip</satuan>
+	<jumlah>10</jumlah>
+	<khasiat>Meringankan Demam</khasiat>
+	<harga per="satuan">15000</harga>
+	<perusahaan Nama="PT.GARCIA">
+		<alamat>Bandung</alamat>
+		<email>garcia@gmail.com</email>
+	</perusahaan>
+</obat>
+
+<obat Nama="Witranal">
+	<kode>J428</kode>
+	<ukuran>500MG</ukuran>
+	<satuan>Strip</satuan>
+	<jumlah>10</jumlah>
+	<khasiat>Meringankan Flu</khasiat>
+	<harga per="satuan">18000</harga>
+	<perusahaan Nama="PT.ITRASAL">
+		<alamat>Semarang</alamat>
+		<email>itrasal@gmail.com</email>
+	</perusahaan>
+</obat>
+</apotik>

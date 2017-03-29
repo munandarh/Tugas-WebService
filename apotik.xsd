@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="apotik">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="obat"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="obat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kode"/>
+                <xs:element ref="ukuran"/>
+                <xs:element ref="satuan"/>
+                <xs:element ref="jumlah"/>
+                <xs:element ref="khasiat"/>
+                <xs:element ref="harga"/>
+                <xs:element ref="perusahaan"/>
+            </xs:sequence>
+            <xs:attribute name="Nama" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="kode" type="xs:NCName"/>
+    <xs:element name="ukuran" type="xs:NMTOKEN"/>
+    <xs:element name="satuan" type="xs:NCName"/>
+    <xs:element name="jumlah" type="xs:integer"/>
+    <xs:element name="khasiat" type="xs:string"/>
+    <xs:element name="harga">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="per" use="required" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="perusahaan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alamat"/>
+                <xs:element ref="email"/>
+            </xs:sequence>
+            <xs:attribute name="Nama" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="alamat" type="xs:NCName"/>
+    <xs:element name="email">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:string">
+    			<xs:pattern
+    				value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})">
+    			</xs:pattern>
+    		</xs:restriction>
+    	</xs:simpleType>
+    </xs:element>
+</xs:schema>
